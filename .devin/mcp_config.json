@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "memory": {
+      "command": "python",
+      "args": [".devin/scripts/memory_mcp_server.py"],
+      "env": {}
+    }
+  }
+}

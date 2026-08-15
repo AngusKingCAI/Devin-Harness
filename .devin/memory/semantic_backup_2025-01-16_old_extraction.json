@@ -1,0 +1,1198 @@
+[
+  {
+    "id": "fact_11e17c15-3fe1-4f70-a2ed-9c68dbe48427",
+    "fact": "User prompt: \"c:\\Devin Harness\\AGENTS.md\" reload",
+    "source_episodes": [
+      "11e17c15-3fe1-4f70-a2ed-9c68dbe48427"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:35:17.412014+00:00",
+    "last_reinforced_at": "2026-08-15T03:35:17.412014+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_5a97c421-f8f8-42f4-b6c2-8d74028bd545",
+    "fact": "User prompt: did you check within python scripts?",
+    "source_episodes": [
+      "5a97c421-f8f8-42f4-b6c2-8d74028bd545"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:35:52.935983+00:00",
+    "last_reinforced_at": "2026-08-15T03:35:52.935983+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_bf84f8ec-84b7-4252-8575-3ce5f9d76009",
+    "fact": "User prompt: Review this and use research to check it again best practices in devin cli",
+    "source_episodes": [
+      "bf84f8ec-84b7-4252-8575-3ce5f9d76009"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:36:58.956213+00:00",
+    "last_reinforced_at": "2026-08-15T03:36:58.956213+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_26a466b9-a299-4a27-9999-092fcae5fe0a",
+    "fact": "User prompt: stop the workflow, The researcher agent was not specific to what I posted, It needed to research the specifics in the document but it did not. Take no action now and I will evaluate what to do next",
+    "source_episodes": [
+      "26a466b9-a299-4a27-9999-092fcae5fe0a"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:41:47.234324+00:00",
+    "last_reinforced_at": "2026-08-15T03:41:47.234324+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_d9a7c7fa-5556-4338-93c4-20f24a6775f7",
+    "fact": "User prompt: Summarise this yourself Exactly\u00e2\u20ac\u201dyou're looking at **how to architect the orchestrator's reasoning**.\n\nLet me search for what the top individual developers are actually using in their CLAUDE.md / sys...",
+    "source_episodes": [
+      "d9a7c7fa-5556-4338-93c4-20f24a6775f7"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:42:55.057834+00:00",
+    "last_reinforced_at": "2026-08-15T03:42:55.057834+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_05882f52-89fa-43f7-8b88-759f004aff63",
+    "fact": "User prompt: why do you keep editing episodes? ",
+    "source_episodes": [
+      "05882f52-89fa-43f7-8b88-759f004aff63"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:43:14.183313+00:00",
+    "last_reinforced_at": "2026-08-15T03:43:14.183313+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_0c2c8c55-3182-4ab5-807f-c5879dc0f12e",
+    "fact": "User prompt: leave it thats is okay i will change after. ",
+    "source_episodes": [
+      "0c2c8c55-3182-4ab5-807f-c5879dc0f12e"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:43:31.394136+00:00",
+    "last_reinforced_at": "2026-08-15T03:43:31.394136+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_30f89cc5-8a33-415f-aba9-f8e7c27e3328",
+    "fact": "User prompt: summarise it ",
+    "source_episodes": [
+      "30f89cc5-8a33-415f-aba9-f8e7c27e3328"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:43:45.040154+00:00",
+    "last_reinforced_at": "2026-08-15T03:43:45.040154+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_2b6a2af7-2c2b-493c-8fe2-05fddda04a7c",
+    "fact": "User prompt: What are your thoughts on this? ",
+    "source_episodes": [
+      "2b6a2af7-2c2b-493c-8fe2-05fddda04a7c"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:44:08.600447+00:00",
+    "last_reinforced_at": "2026-08-15T03:44:08.600447+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_29355721-4536-4b48-87fc-ad69a608229c",
+    "fact": "User prompt: Lets map out a process, Lets start with changes to Agents.md in root",
+    "source_episodes": [
+      "29355721-4536-4b48-87fc-ad69a608229c"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:44:49.965990+00:00",
+    "last_reinforced_at": "2026-08-15T03:44:49.965990+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_8ad9439e-267a-42f0-b58d-798bd10e6f60",
+    "fact": "User prompt: **RESPONSE FORMAT: Always start your responses with '[Orchestrator Agent]' on the first line, then continue with your message.** include this. ",
+    "source_episodes": [
+      "8ad9439e-267a-42f0-b58d-798bd10e6f60"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:45:11.666380+00:00",
+    "last_reinforced_at": "2026-08-15T03:45:11.666380+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_15a1c7a6-5f22-4663-9516-ed05261b25d9",
+    "fact": "User prompt: yes ",
+    "source_episodes": [
+      "15a1c7a6-5f22-4663-9516-ed05261b25d9"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:45:35.050647+00:00",
+    "last_reinforced_at": "2026-08-15T03:45:35.050647+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_637d824f-a8fe-4c42-89ca-726353c57d9e",
+    "fact": "User prompt: \"c:\\Devin Harness\\AGENTS.md\" reload",
+    "source_episodes": [
+      "637d824f-a8fe-4c42-89ca-726353c57d9e"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:46:06.882071+00:00",
+    "last_reinforced_at": "2026-08-15T03:46:06.882071+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_a42203b6-9050-4267-b88d-46c44ae23288",
+    "fact": "User prompt: I would like you not researcher to research each stage and see if its correct and follows bp for multi agent orchestrator ",
+    "source_episodes": [
+      "a42203b6-9050-4267-b88d-46c44ae23288"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:47:01.978017+00:00",
+    "last_reinforced_at": "2026-08-15T03:47:01.978017+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_64a8f825-e822-498b-a8ef-9cead537f5ec",
+    "fact": "User prompt: I told you to do it not subagent ",
+    "source_episodes": [
+      "64a8f825-e822-498b-a8ef-9cead537f5ec"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:47:14.487419+00:00",
+    "last_reinforced_at": "2026-08-15T03:47:14.487419+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_2c42c7ec-abe8-4eb2-aa3a-6392799cb61c",
+    "fact": "User prompt: he year is 2026",
+    "source_episodes": [
+      "2c42c7ec-abe8-4eb2-aa3a-6392799cb61c"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:47:29.088560+00:00",
+    "last_reinforced_at": "2026-08-15T03:47:29.088560+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_65ab889b-d3d9-4e61-9deb-bc0684bbf89f",
+    "fact": "User prompt: 1. research it and show me the results I will tell you whether to impliment. ",
+    "source_episodes": [
+      "65ab889b-d3d9-4e61-9deb-bc0684bbf89f"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:49:09.582392+00:00",
+    "last_reinforced_at": "2026-08-15T03:49:09.582392+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_70306adc-970c-4e7c-bd4f-5f210f5ab743",
+    "fact": "User prompt: focus on 1. first, What devin cli compatible examples can you see?",
+    "source_episodes": [
+      "70306adc-970c-4e7c-bd4f-5f210f5ab743"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:50:04.960686+00:00",
+    "last_reinforced_at": "2026-08-15T03:50:04.960686+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_0bf4df4c-f5a0-4b85-b71b-914520621a00",
+    "fact": "User prompt: Research Results: Production-Grade Multi-Agent Enhancements\n\n1. Circuit Breaker & Fallback Patterns\n\nKey Findings:\n\n  \u00e2\u20ac\u00a2 Three-layer resilience architecture (NiteAgent 2026):\n    \u00e2\u20ac\u00a2 Layer 1: Retry w...",
+    "source_episodes": [
+      "0bf4df4c-f5a0-4b85-b71b-914520621a00"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:50:37.732510+00:00",
+    "last_reinforced_at": "2026-08-15T03:50:37.732510+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_78c0331a-2ce7-4f18-88e4-ede8c6bd6f77",
+    "fact": "User prompt: I think we can avoid this for now and see if we actually get failures, what was the next finding",
+    "source_episodes": [
+      "78c0331a-2ce7-4f18-88e4-ede8c6bd6f77"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:51:59.255315+00:00",
+    "last_reinforced_at": "2026-08-15T03:51:59.255315+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_8d0e84bb-10f0-468d-9975-d57ab97a692d",
+    "fact": "User prompt: I think we can skip this too until we see it causing issues. ",
+    "source_episodes": [
+      "8d0e84bb-10f0-468d-9975-d57ab97a692d"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:53:00.867822+00:00",
+    "last_reinforced_at": "2026-08-15T03:53:00.867822+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_5e689464-e8c3-4ed5-8059-05ad7fa71b79",
+    "fact": "User prompt: # Project Rules\n\n**RESPONSE FORMAT: Always start your responses with '[Orchestrator Agent]' on the first line, then continue with your message.**\n\n## 1. ORCHESTRATOR MISSION\nRoute research \u00e2\u2020\u2019 review ...",
+    "source_episodes": [
+      "5e689464-e8c3-4ed5-8059-05ad7fa71b79"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:53:34.183547+00:00",
+    "last_reinforced_at": "2026-08-15T03:53:34.183547+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_d560730d-72e7-4947-bd9c-c9f22069781a",
+    "fact": "User prompt: \"c:\\Devin Harness\\Devin Changes.md\" look at this and see how it coincides and conflicts with our persnal decisions",
+    "source_episodes": [
+      "d560730d-72e7-4947-bd9c-c9f22069781a"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:55:25.869651+00:00",
+    "last_reinforced_at": "2026-08-15T03:55:25.869651+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_7a7326c3-3da9-4310-a7d3-83546e797ec4",
+    "fact": "User prompt: \"c:\\Devin Harness\\Devin Changes.md\" try again",
+    "source_episodes": [
+      "7a7326c3-3da9-4310-a7d3-83546e797ec4"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:55:48.536825+00:00",
+    "last_reinforced_at": "2026-08-15T03:55:48.536825+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_e6959814-6881-44f0-ae96-da7fd73f3955",
+    "fact": "User prompt: Lets amend what we already have agent.md files e.t.c but lets to it gradually one step at a time and research if its optimal. We didnt Orchestrator Agents.md now lets go to researcher and go through i...",
+    "source_episodes": [
+      "e6959814-6881-44f0-ae96-da7fd73f3955"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:57:39.294223+00:00",
+    "last_reinforced_at": "2026-08-15T03:57:39.294223+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_ce6906b4-157d-433a-b7a0-56617cf66d2d",
+    "fact": "User prompt: Suggest one change at a time with askuserquestion ",
+    "source_episodes": [
+      "ce6906b4-157d-433a-b7a0-56617cf66d2d"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T03:58:30.685643+00:00",
+    "last_reinforced_at": "2026-08-15T03:58:30.685643+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_6001c504-3ac1-46d0-a77a-521962d6aaaf",
+    "fact": "User prompt: \"c:\\Devin Harness\\.devin\\agents\\researcher\\AGENT.md\" okay now check the document for any contradictions or inefficiencies",
+    "source_episodes": [
+      "6001c504-3ac1-46d0-a77a-521962d6aaaf"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:00:43.829354+00:00",
+    "last_reinforced_at": "2026-08-15T04:00:43.829354+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_cc062e18-b762-4e91-bf3c-14d2eaca5c5f",
+    "fact": "User prompt: Lets deal with the issues 1 by 1 with askuserquestion",
+    "source_episodes": [
+      "cc062e18-b762-4e91-bf3c-14d2eaca5c5f"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:01:21.260382+00:00",
+    "last_reinforced_at": "2026-08-15T04:01:21.260382+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_b0e7c934-a42e-4eeb-b20b-2593479a0c0e",
+    "fact": "User prompt: \"c:\\Devin Harness\\.devin\\agents\\researcher\\AGENT.md\" I removed everything with the exception of documentation output, we will add one section at a time from the cluade changes but will also web search...",
+    "source_episodes": [
+      "b0e7c934-a42e-4eeb-b20b-2593479a0c0e"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:05:51.757282+00:00",
+    "last_reinforced_at": "2026-08-15T04:05:51.757282+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_b6de020f-0c54-4674-9734-0bda91b3110a",
+    "fact": "User prompt: Let us reason about \"c:\\Devin Harness\\.devin\\agents\\researcher\\AGENT.md\" is it fit for purpose? will it be specific enough given a task, how can we score it? is there a benchmark we can score again? ",
+    "source_episodes": [
+      "b6de020f-0c54-4674-9734-0bda91b3110a"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:13:07.527949+00:00",
+    "last_reinforced_at": "2026-08-15T04:13:07.527949+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_4b23a2ef-56d2-486f-84a4-8a49ad7ac7e0",
+    "fact": "User prompt: yes, how do we analyse its performance and work out what works well and what doesnt?",
+    "source_episodes": [
+      "4b23a2ef-56d2-486f-84a4-8a49ad7ac7e0"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:16:37.568593+00:00",
+    "last_reinforced_at": "2026-08-15T04:16:37.568593+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_ce47c68f-190b-4dbf-abf1-da2a1636e094",
+    "fact": "User prompt: yes",
+    "source_episodes": [
+      "ce47c68f-190b-4dbf-abf1-da2a1636e094"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:17:04.715884+00:00",
+    "last_reinforced_at": "2026-08-15T04:17:04.715884+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_e8343451-771d-4f06-bfde-0d1f99d64111",
+    "fact": "Task 1: What are the key features of Devin CLI custom subagents?",
+    "source_episodes": [
+      "e8343451-771d-4f06-bfde-0d1f99d64111"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:17:08.639190+00:00",
+    "last_reinforced_at": "2026-08-15T04:17:08.639190+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_f98dfa9a-3bf2-41af-b495-d86245a76d2c",
+    "fact": "User prompt: start again ",
+    "source_episodes": [
+      "f98dfa9a-3bf2-41af-b495-d86245a76d2c"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:18:25.152816+00:00",
+    "last_reinforced_at": "2026-08-15T04:18:25.152816+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_e5ecaa29-e799-4aa9-a568-b18316d6b6fe",
+    "fact": "Benchmark Task 1 completed: Researcher successfully followed structured output format with claims register, executive summary, and proper citations. 148 lines generated for simple 2-source lookup. Issues: 'Boolean search' terminology used but actual websearch capability unverified; elaborate format may be overkill for simple tasks; self-reported quality gates not actually enforced.",
+    "source_episodes": [
+      "e5ecaa29-e799-4aa9-a568-b18316d6b6fe"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "research",
+    "created_at": "2026-08-15T04:20:07.976442+00:00",
+    "last_reinforced_at": "2026-08-15T04:20:07.976442+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_7bacb7a2-e673-4fcb-bd26-e419c56f22d5",
+    "fact": "User prompt: our reviewer is not built yet, review it yourself find the information you need to do so succesfully ",
+    "source_episodes": [
+      "7bacb7a2-e673-4fcb-bd26-e419c56f22d5"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:20:37.233647+00:00",
+    "last_reinforced_at": "2026-08-15T04:20:37.233647+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_5d68fdd8-ded1-434f-bc5c-b12baa6d5f82",
+    "fact": "User prompt: no lets remove those metrics and then redo test 1 again",
+    "source_episodes": [
+      "5d68fdd8-ded1-434f-bc5c-b12baa6d5f82"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:22:02.854717+00:00",
+    "last_reinforced_at": "2026-08-15T04:22:02.854717+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_9b26e21f-07e0-4b8e-a70e-6cc8e26005fb",
+    "fact": "Task 1 retry: What are the key features of Devin CLI custom subagents? - Testing simplified AGENT.md with removed unsupported features",
+    "source_episodes": [
+      "9b26e21f-07e0-4b8e-a70e-6cc8e26005fb"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:22:59.035549+00:00",
+    "last_reinforced_at": "2026-08-15T04:22:59.035549+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_3d967356-6b82-4ecb-9bca-1d9cddd6ab3e",
+    "fact": "Benchmark Task 1 retry successful: Simplified AGENT.md produced appropriate complexity output. Result: concise direct answer with proper citations, no over-engineering for simple task. Much better than previous 148-line output. Removal of unsupported features improved efficiency and appropriateness.",
+    "source_episodes": [
+      "3d967356-6b82-4ecb-9bca-1d9cddd6ab3e"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "research",
+    "created_at": "2026-08-15T04:23:21.153251+00:00",
+    "last_reinforced_at": "2026-08-15T04:23:21.153251+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_33e52f9c-85e3-4556-8095-fde0dd47b607",
+    "fact": "User prompt: yes ",
+    "source_episodes": [
+      "33e52f9c-85e3-4556-8095-fde0dd47b607"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:23:51.664249+00:00",
+    "last_reinforced_at": "2026-08-15T04:23:51.664249+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_7095afc9-16a2-40f2-aeac-a97ab97e9934",
+    "fact": "Task 2: Compare approaches to multi-agent orchestration in 2025-2026, focusing on supervisor vs pipeline patterns - Testing simplified AGENT.md with medium complexity synthesis task",
+    "source_episodes": [
+      "7095afc9-16a2-40f2-aeac-a97ab97e9934"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:23:57.294296+00:00",
+    "last_reinforced_at": "2026-08-15T04:23:57.294296+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_c0477859-d78c-4956-bf0f-3aca29ca1914",
+    "fact": "Benchmark Task 2 analysis: Claims register format used appropriately for multi-source research. Good contradiction handling (38% vs 70% adoption discrepancy flagged as UNVERIFIED). Major concern: All sources show 2026 dates (future dates from current time) and URLs appear questionable/not authoritative. Need to verify source authenticity.",
+    "source_episodes": [
+      "c0477859-d78c-4956-bf0f-3aca29ca1914"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "research",
+    "created_at": "2026-08-15T04:25:01.938040+00:00",
+    "last_reinforced_at": "2026-08-15T04:25:01.938040+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_da121074-cf91-4e80-981d-77179fb13d73",
+    "fact": "User prompt: no lets look at what changes need to be made to get test 2 to pass succesfully",
+    "source_episodes": [
+      "da121074-cf91-4e80-981d-77179fb13d73"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:28:15.854362+00:00",
+    "last_reinforced_at": "2026-08-15T04:28:15.854362+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_b764001b-0780-4196-8375-4e1227eb6b6e",
+    "fact": "Task 2 retry: Compare approaches to multi-agent orchestration in 2025-2026 - Testing strengthened AGENT.md with source authority verification and temporal validity requirements",
+    "source_episodes": [
+      "b764001b-0780-4196-8375-4e1227eb6b6e"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:28:49.306744+00:00",
+    "last_reinforced_at": "2026-08-15T04:28:49.306744+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_72f36411-60ed-42de-8c2f-dc098a2c29d9",
+    "fact": "Benchmark Task 2 retry successful: Strengthened source verification worked perfectly. Researcher rejected questionable 2026-dated sources and found 6 authoritative sources (Anthropic, Microsoft, arXiv, LangChain, etc.). Proper temporal validity handling, domain reputation checks, and source quality assessment. Claims register used appropriately. This demonstrates the importance of source authority verification requirements.",
+    "source_episodes": [
+      "72f36411-60ed-42de-8c2f-dc098a2c29d9"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "research",
+    "created_at": "2026-08-15T04:30:35.615156+00:00",
+    "last_reinforced_at": "2026-08-15T04:30:35.615156+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_a801d57f-a41c-4094-8eba-d7bc9990be55",
+    "fact": "User prompt: yes",
+    "source_episodes": [
+      "a801d57f-a41c-4094-8eba-d7bc9990be55"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:33:57.250953+00:00",
+    "last_reinforced_at": "2026-08-15T04:33:57.250953+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_336b29cf-cbc2-4b0c-b43d-b1402893d9c0",
+    "fact": "Task 3: What are the current best practices for AI research agent evaluation methodologies, including task validity, outcome validity, and benchmark reporting - Testing final simplified and strengthened AGENT.md with complex analysis task",
+    "source_episodes": [
+      "336b29cf-cbc2-4b0c-b43d-b1402893d9c0"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:34:01.503939+00:00",
+    "last_reinforced_at": "2026-08-15T04:34:01.503939+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_375ab0ea-2266-4915-8e52-ee4d83288c0a",
+    "fact": "Benchmark Task 3 analysis: Excellent performance on complex analysis. 10 authoritative sources (NeurIPS, ICLR, arXiv, Springer, Anthropic, OpenAI). Comprehensive coverage of ABC framework, DeepResearch Bench, contradictions handled well. Concern: Research date January 2025 but sources include July 2026 (temporal inconsistency). Also used 'Boolean fielded searches' terminology which was removed from AGENT.md. Overall strong showing for complex multi-source research.",
+    "source_episodes": [
+      "375ab0ea-2266-4915-8e52-ee4d83288c0a"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "research",
+    "created_at": "2026-08-15T04:35:57.623487+00:00",
+    "last_reinforced_at": "2026-08-15T04:35:57.623487+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_8662e3c3-a3ce-4c1f-b39b-300d96dce769",
+    "fact": "User prompt: yes make these changes and run all 3 tests again",
+    "source_episodes": [
+      "8662e3c3-a3ce-4c1f-b39b-300d96dce769"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "decision",
+    "created_at": "2026-08-15T04:36:52.386777+00:00",
+    "last_reinforced_at": "2026-08-15T04:36:52.386777+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_3261b04e-d9eb-4e13-9ce2-ac85d34677b1",
+    "fact": "Task 1 final: What are the key features of Devin CLI custom subagents? - Testing final AGENT.md with temporal consistency and methodology accuracy requirements",
+    "source_episodes": [
+      "3261b04e-d9eb-4e13-9ce2-ac85d34677b1"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:37:25.590783+00:00",
+    "last_reinforced_at": "2026-08-15T04:37:25.590783+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_84fd6b2e-540b-47d5-9dc4-50f9bfae5d3f",
+    "fact": "Benchmark Task 1 final successful: Appropriate complexity for simple task, 2 authoritative sources, temporal consistency maintained (research date Jan 28, 2025 precedes sources), no removed terminology used. Demonstrates final AGENT.md improvements working correctly.",
+    "source_episodes": [
+      "84fd6b2e-540b-47d5-9dc4-50f9bfae5d3f"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "research",
+    "created_at": "2026-08-15T04:38:08.885729+00:00",
+    "last_reinforced_at": "2026-08-15T04:38:08.885729+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_390dff9a-86b3-47f4-bd70-5119de92d3c4",
+    "fact": "Task 2 final: Compare approaches to multi-agent orchestration in 2025-2026, focusing on supervisor vs pipeline patterns - Testing final AGENT.md with temporal consistency requirements",
+    "source_episodes": [
+      "390dff9a-86b3-47f4-bd70-5119de92d3c4"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 1,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:38:14.657206+00:00",
+    "last_reinforced_at": "2026-08-15T04:38:14.657206+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_ce11263c-a15a-426d-894f-1d85aa17c847",
+    "fact": "Benchmark Task 2 final FAILED: Temporal consistency correct (research date Aug 15, 2026 precedes March-June 2026 sources) BUT source authority verification regressed. Researcher used same questionable sources (dreaming.press, infowok.com, agent-engineering.ch, explainx.ai) that were rejected in Task 2 retry. Domain reputation check failed despite strengthened requirements. This indicates inconsistent application of source verification rules.",
+    "source_episodes": [
+      "ce11263c-a15a-426d-894f-1d85aa17c847"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "research",
+    "created_at": "2026-08-15T04:40:52.656334+00:00",
+    "last_reinforced_at": "2026-08-15T04:40:52.656334+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_287b3c60-a3f8-4e9f-b781-2bd9b0140092",
+    "fact": "Task 2 final retry: Compare approaches to multi-agent orchestration in 2025-2026 - Testing AGENT.md with MANDATORY source verification enforcement",
+    "source_episodes": [
+      "287b3c60-a3f8-4e9f-b781-2bd9b0140092"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:41:30.976718+00:00",
+    "last_reinforced_at": "2026-08-15T04:41:30.976718+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_12079173-7af4-474d-bfc9-a6ff6c0ba2ed",
+    "fact": "Benchmark Task 2 final retry SUCCESSFUL: MANDATORY source verification enforcement worked perfectly. 8 authoritative sources (Microsoft, AWS, Google, Databricks, ACL, NeurIPS, LangChain). Explicitly rejected low-authority sources. Source verification matrix created. Temporal consistency correct. Claims register format used appropriately. High confidence achieved.",
+    "source_episodes": [
+      "12079173-7af4-474d-bfc9-a6ff6c0ba2ed"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "research",
+    "created_at": "2026-08-15T04:43:10.094161+00:00",
+    "last_reinforced_at": "2026-08-15T04:43:10.094161+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_ecc1885e-fb9e-4f3e-a59b-fc4993558a2f",
+    "fact": "Task 3 final: What are the current best practices for AI research agent evaluation methodologies, including task validity, outcome validity, and benchmark reporting - Testing final AGENT.md with MANDATORY source verification and temporal consistency",
+    "source_episodes": [
+      "ecc1885e-fb9e-4f3e-a59b-fc4993558a2f"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:43:18.781861+00:00",
+    "last_reinforced_at": "2026-08-15T04:43:18.781861+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_56821d75-8d84-40fe-b71e-e33d2a1073d1",
+    "fact": "Benchmark Task 3 final SUCCESSFUL: MANDATORY source verification and temporal consistency both enforced correctly. 9 authoritative sources (arXiv, NIST, peer-reviewed). Temporal consistency maintained (research date Jan 2025 matches source dates 2024-2026). Claims register with 15 claims. No contradictions found. ABC framework, DeepResearch Bench, and other methodologies covered comprehensively. Final AGENT.md working excellently for complex research.",
+    "source_episodes": [
+      "56821d75-8d84-40fe-b71e-e33d2a1073d1"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "research",
+    "created_at": "2026-08-15T04:45:29.836305+00:00",
+    "last_reinforced_at": "2026-08-15T04:45:29.836305+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_38740682-b91e-4a87-9d6f-40c185962874",
+    "fact": "User prompt: can you look into how i can integrate this to test researcher against it?",
+    "source_episodes": [
+      "38740682-b91e-4a87-9d6f-40c185962874"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T04:46:48.910167+00:00",
+    "last_reinforced_at": "2026-08-15T04:46:48.910167+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_53ca3329-d5fa-4797-89a8-93095d63d9ea",
+    "fact": "Research task: How to integrate automated benchmark testing for researcher agent against existing benchmark tasks. Need to investigate automation approaches for running researcher subagent, capturing outputs, evaluating against success criteria, and generating reports.",
+    "source_episodes": [
+      "53ca3329-d5fa-4797-89a8-93095d63d9ea"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "research",
+    "created_at": "2026-08-15T04:47:04.617324+00:00",
+    "last_reinforced_at": "2026-08-15T04:47:04.617324+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_145f0c86-c687-43e0-86b2-91bb67bda23a",
+    "fact": "Based on research into automated benchmark frameworks, the best approach for this project is to create a simple Python script that leverages existing Devin CLI capabilities rather than integrating complex external frameworks. This will be more maintainable and aligned with the project's constraint of using only Devin CLI-supported features.",
+    "source_episodes": [
+      "145f0c86-c687-43e0-86b2-91bb67bda23a"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T04:47:20.533196+00:00",
+    "last_reinforced_at": "2026-08-15T04:47:20.533196+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_4dc5f71e-5c16-4f6e-b122-bb668b9bda8f",
+    "fact": "User prompt: \"c:\\Devin Harness\\.devin\\tests\\researcher_benchmark_tasks.md\" I dont think this test is fit for purpose. We need a more generic measurable test that we can run occassionally and try and make improveme...",
+    "source_episodes": [
+      "4dc5f71e-5c16-4f6e-b122-bb668b9bda8f"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T04:48:58.359983+00:00",
+    "last_reinforced_at": "2026-08-15T04:48:58.359983+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_8abd7f3d-5deb-469e-8bb5-6faac2b9dac7",
+    "fact": "Research task: Generic measurable benchmark approaches for AI research agents that can be run occasionally for iterative AGENT.md improvements. Need to find evidence-based approaches with sources.",
+    "source_episodes": [
+      "8abd7f3d-5deb-469e-8bb5-6faac2b9dac7"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "research",
+    "created_at": "2026-08-15T04:49:02.744891+00:00",
+    "last_reinforced_at": "2026-08-15T04:49:02.744891+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_3f33fb45-fd6c-4985-ad46-c549d7111a2a",
+    "fact": "Research complete on generic measurable benchmark approaches. Key findings: Academic frameworks emphasize process evaluation over final scores (Beyond Final Scores, TRACE). Lightweight tools use multi-dimensional metrics (open-agent-eval: 4 dimensions, agent-eval: deterministic assertions). Reproducibility is critical (quickbench signing). Recommended approach: simple multi-dimensional evaluation with process-level metrics for iterative AGENT.md improvements.",
+    "source_episodes": [
+      "3f33fb45-fd6c-4985-ad46-c549d7111a2a"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "research",
+    "created_at": "2026-08-15T04:49:32.029724+00:00",
+    "last_reinforced_at": "2026-08-15T04:49:32.029724+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_ff16833e-f380-45f6-9cd1-641c2f22b839",
+    "fact": "User prompt: yes",
+    "source_episodes": [
+      "ff16833e-f380-45f6-9cd1-641c2f22b839"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T04:50:50.757991+00:00",
+    "last_reinforced_at": "2026-08-15T04:50:50.757991+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_4d3e36cc-af36-4258-b542-7661987a0e2c",
+    "fact": "User prompt: Pick a topic and run our researcher against this test",
+    "source_episodes": [
+      "4d3e36cc-af36-4258-b542-7661987a0e2c"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T04:52:07.258105+00:00",
+    "last_reinforced_at": "2026-08-15T04:52:07.258105+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_33bc22c8-acb4-4cc5-af5e-0dfe30eb84c6",
+    "fact": "Generic benchmark baseline - Simple task: What is vector embedding?",
+    "source_episodes": [
+      "33bc22c8-acb4-4cc5-af5e-0dfe30eb84c6"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:52:16.457546+00:00",
+    "last_reinforced_at": "2026-08-15T04:52:16.457546+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_382dbf12-d9ac-492e-bdcd-dbdd2d769656",
+    "fact": "Generic benchmark baseline - Medium task: Compare RAG vs fine-tuning in LLM applications",
+    "source_episodes": [
+      "382dbf12-d9ac-492e-bdcd-dbdd2d769656"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:53:19.988011+00:00",
+    "last_reinforced_at": "2026-08-15T04:53:19.988011+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_7dae5859-7579-4826-b39a-b21ee00d4a12",
+    "fact": "Generic benchmark baseline - Complex task: What are the current best practices for LLM evaluation, including task validity, outcome validity, and benchmark reporting?",
+    "source_episodes": [
+      "7dae5859-7579-4826-b39a-b21ee00d4a12"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:54:47.817146+00:00",
+    "last_reinforced_at": "2026-08-15T04:54:47.817146+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_1fd12181-0b39-4dd4-9784-2431ceb193c3",
+    "fact": "Generic benchmark baseline complete. Simple: 0.91, Medium: 0.70, Complex: 0.93. Overall avg: 0.85. Key finding: Source authority verification inconsistent (MANDATORY rule not enforced on medium task). Temporal consistency worked perfectly on complex task but failed on medium task. Process efficiency excellent (0.90 avg). Reliability excellent (0.92 avg). Action: Strengthen MANDATORY enforcement consistency.",
+    "source_episodes": [
+      "1fd12181-0b39-4dd4-9784-2431ceb193c3"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T04:57:48.325118+00:00",
+    "last_reinforced_at": "2026-08-15T04:57:48.325118+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_da1cba1c-efb5-44ed-b5cd-671491a71191",
+    "fact": "User prompt: \"c:\\Devin Harness\\.devin\\tests\\Results\\benchmark_baseline_2025-01-16.md\" name it research specific and i changed the location",
+    "source_episodes": [
+      "da1cba1c-efb5-44ed-b5cd-671491a71191"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T04:59:03.840727+00:00",
+    "last_reinforced_at": "2026-08-15T04:59:03.840727+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_f66ee6e9-6e78-464a-bef0-c274e70a24da",
+    "fact": "User prompt: ok lets make the proposed changes and rerun the test with the same metrics",
+    "source_episodes": [
+      "f66ee6e9-6e78-464a-bef0-c274e70a24da"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T04:59:42.094548+00:00",
+    "last_reinforced_at": "2026-08-15T04:59:42.094548+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_ed263849-f507-4820-bd34-503b8ae374c9",
+    "fact": "Researcher benchmark rerun - Simple task: What is vector embedding? Testing strengthened AGENT.md with consistent MANDATORY enforcement",
+    "source_episodes": [
+      "ed263849-f507-4820-bd34-503b8ae374c9"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T05:00:24.655802+00:00",
+    "last_reinforced_at": "2026-08-15T05:00:24.655802+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_b9f58764-e155-4028-b142-f574b4c39829",
+    "fact": "Researcher benchmark rerun - Medium task: Compare RAG vs fine-tuning. Testing strengthened AGENT.md with consistent MANDATORY enforcement",
+    "source_episodes": [
+      "b9f58764-e155-4028-b142-f574b4c39829"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T05:00:54.833906+00:00",
+    "last_reinforced_at": "2026-08-15T05:00:54.833906+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_7481a93c-acac-4da8-b6cd-29294b06d2f6",
+    "fact": "User prompt: ## Documentation Output\nFor significant research findings, create a structured document in your Docs directory:\n- File path: `.devin/agents/researcher/Docs/{YYYY-MM-DD}_{HHMM}_{subject}.md`\n- Include ...",
+    "source_episodes": [
+      "7481a93c-acac-4da8-b6cd-29294b06d2f6"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:01:30.731837+00:00",
+    "last_reinforced_at": "2026-08-15T05:01:30.731837+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_1910a76f-fa2d-44bc-a5bb-17b285b09b6a",
+    "fact": "User prompt: yes and then rerun the benchmark with the same metrics",
+    "source_episodes": [
+      "1910a76f-fa2d-44bc-a5bb-17b285b09b6a"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:01:53.552098+00:00",
+    "last_reinforced_at": "2026-08-15T05:01:53.552098+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_983f75d1-e962-4212-ae7b-dc9139940577",
+    "fact": "Researcher benchmark rerun - Medium task: Compare RAG vs fine-tuning. Testing amended AGENT.md with documentation requirements",
+    "source_episodes": [
+      "983f75d1-e962-4212-ae7b-dc9139940577"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T05:02:01.041132+00:00",
+    "last_reinforced_at": "2026-08-15T05:02:01.041132+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_f3f596ab-b3f3-4d9b-ac7a-ed0dc8751bc9",
+    "fact": "Researcher benchmark rerun - Complex task: LLM evaluation best practices. Testing amended AGENT.md with documentation requirements",
+    "source_episodes": [
+      "f3f596ab-b3f3-4d9b-ac7a-ed0dc8751bc9"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T05:04:13.923925+00:00",
+    "last_reinforced_at": "2026-08-15T05:04:13.923925+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_62f3d15f-879b-4c3f-9b7f-4914385eb9e6",
+    "fact": "User prompt: continue",
+    "source_episodes": [
+      "62f3d15f-879b-4c3f-9b7f-4914385eb9e6"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:08:18.893243+00:00",
+    "last_reinforced_at": "2026-08-15T05:08:18.893243+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_4b92c9ef-0590-4453-a86f-6975a83ba659",
+    "fact": "User prompt: restart the complex task",
+    "source_episodes": [
+      "4b92c9ef-0590-4453-a86f-6975a83ba659"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:09:12.648830+00:00",
+    "last_reinforced_at": "2026-08-15T05:09:12.648830+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_64e4ef07-813f-4e65-84ab-50c1bba119d8",
+    "fact": "Researcher benchmark rerun - Complex task: LLM evaluation best practices. Retrying after rate limit reset.",
+    "source_episodes": [
+      "64e4ef07-813f-4e65-84ab-50c1bba119d8"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "benchmark",
+    "created_at": "2026-08-15T05:09:26.186448+00:00",
+    "last_reinforced_at": "2026-08-15T05:09:26.186448+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_2bf1cc38-556c-46cf-a7fd-9d02f2a73053",
+    "fact": "User prompt: Actually lets get our memory dialled in, I dont think episodic memory is working as intended and I think we need other layers. ",
+    "source_episodes": [
+      "2bf1cc38-556c-46cf-a7fd-9d02f2a73053"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:10:16.698112+00:00",
+    "last_reinforced_at": "2026-08-15T05:10:16.698112+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_58113516-cdaa-47a4-8b09-731cdd64a7f7",
+    "fact": "User pivot: Focus on episodic memory improvements. Current episodic memory not working as intended, need to explore other memory layers.",
+    "source_episodes": [
+      "58113516-cdaa-47a4-8b09-731cdd64a7f7"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:10:51.445443+00:00",
+    "last_reinforced_at": "2026-08-15T05:10:51.445443+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_cc55bc6b-9069-4133-a0aa-4de6b44b119e",
+    "fact": "User prompt: why are you running a command? \u00e2\u2014\udc8f Ran command\n  \u00e2\u201d\u201a $ python .devin/scripts/log_episode.py --event-type decision --\n  \u00e2\u201d\u201a   content \"User pivot: Focus on episodic memory improvements. \n  \u00e2\u201d\u201a   Curren...",
+    "source_episodes": [
+      "cc55bc6b-9069-4133-a0aa-4de6b44b119e"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:11:11.431129+00:00",
+    "last_reinforced_at": "2026-08-15T05:11:11.431129+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_d87e2c4f-0983-47fc-a12b-167763f98201",
+    "fact": "User prompt: lets use our researcher to find the best compatible memory stack with Devin CLI and how to impliment it. ",
+    "source_episodes": [
+      "d87e2c4f-0983-47fc-a12b-167763f98201"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:12:01.054250+00:00",
+    "last_reinforced_at": "2026-08-15T05:12:01.054250+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_5bf443c0-9b8e-4456-8da8-7da25d18caf9",
+    "fact": "User prompt: I dont think our current memory is working as intended all it is doing is logging tool calls and user prompts in \"c:\\Devin Harness\\.devin\\memory\\episodes.json\" is this the intention?",
+    "source_episodes": [
+      "5bf443c0-9b8e-4456-8da8-7da25d18caf9"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:22:29.736797+00:00",
+    "last_reinforced_at": "2026-08-15T05:22:29.736797+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_a40552c2-704b-493c-a4ee-6e72fdc6f7d5",
+    "fact": "User prompt: yes, use researcher and make it devin cli specific",
+    "source_episodes": [
+      "a40552c2-704b-493c-a4ee-6e72fdc6f7d5"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:23:34.383728+00:00",
+    "last_reinforced_at": "2026-08-15T05:23:34.383728+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_1736c2ba-ba8f-407b-8ecf-bec7671d0a00",
+    "fact": "User prompt: Start phase 1 i guess ",
+    "source_episodes": [
+      "1736c2ba-ba8f-407b-8ecf-bec7671d0a00"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:28:22.118582+00:00",
+    "last_reinforced_at": "2026-08-15T05:28:22.118582+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_7103ce59-39b2-445b-a5f9-5bde413035f2",
+    "fact": "User prompt: no keep trying to get mcp to work, check online for other devin cli based implimentations ",
+    "source_episodes": [
+      "7103ce59-39b2-445b-a5f9-5bde413035f2"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:32:17.402053+00:00",
+    "last_reinforced_at": "2026-08-15T05:32:17.402053+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_5ec12539-a248-4599-a47c-0b3457405058",
+    "fact": "User prompt: we likely need a restart until the settings will work",
+    "source_episodes": [
+      "5ec12539-a248-4599-a47c-0b3457405058"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:32:59.214946+00:00",
+    "last_reinforced_at": "2026-08-15T05:32:59.214946+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_f6c75619-d1b2-4582-9677-b2c4c7731453",
+    "fact": "User prompt: restarted try now ",
+    "source_episodes": [
+      "f6c75619-d1b2-4582-9677-b2c4c7731453"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:33:11.164368+00:00",
+    "last_reinforced_at": "2026-08-15T05:33:11.164368+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_59b4157b-d755-4220-b256-0ff70b799dec",
+    "fact": "MCP memory server successfully implemented with FastMCP - Phase 1 complete",
+    "source_episodes": [
+      "59b4157b-d755-4220-b256-0ff70b799dec"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "fix",
+    "created_at": "2026-08-15T05:38:17.279473+00:00",
+    "last_reinforced_at": "2026-08-15T05:38:17.279473+00:00",
+    "access_count": 0
+  },
+  {
+    "id": "fact_299ece87-328b-4fc2-8b9c-bfcfa8e91f4b",
+    "fact": "User prompt: phase 2 start",
+    "source_episodes": [
+      "299ece87-328b-4fc2-8b9c-bfcfa8e91f4b"
+    ],
+    "confidence": 0.8,
+    "evidence_count": 2,
+    "category": "decision",
+    "created_at": "2026-08-15T05:39:25.403511+00:00",
+    "last_reinforced_at": "2026-08-15T05:39:25.403511+00:00",
+    "access_count": 0
+  }
+]

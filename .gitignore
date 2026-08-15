@@ -1,0 +1,23 @@
+# Devin CLI local configuration
+.devin/config.local.json
+.devin/mcp_config.local.json
+.devin/hooks.v1.local.json
+
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+node_modules/
+dist/
+build/
+*.log
