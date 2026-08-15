@@ -77,29 +77,47 @@ def filter_episodes_by_id(episodes: List[Dict], episode_id: str) -> List[Dict]:
     return [ep for ep in episodes if ep['id'] == episode_id]
 
 
-def deduplicate_facts(new_facts: List[Dict], existing_facts: List[Dict]) -> List[Dict]:
+def text_similarity(text1: str, text2: str) -> float:
     """
-    Deduplicate facts against existing semantic memory.
+    Calculate similarity between two texts using SequenceMatcher.
     
-    A fact is a duplicate if it has the same content (case-insensitive).
+    Returns a float between 0.0 (no similarity) and 1.0 (identical).
+    """
+    from difflib import SequenceMatcher
+    return SequenceMatcher(None, text1.lower(), text2.lower()).ratio()
+
+
+def deduplicate_facts(new_facts: List[Dict], existing_facts: List[Dict], similarity_threshold: float = 0.7) -> List[Dict]:
+    """
+    Deduplicate facts against existing semantic memory using similarity matching.
+    
+    A fact is a duplicate if it has high similarity to an existing fact.
     If duplicate found, increment evidence_count and update last_reinforced_at.
     """
-    existing_content_map = {fact['fact'].lower(): fact for fact in existing_facts}
-    
     merged_facts = existing_facts.copy()
     
     for new_fact in new_facts:
-        fact_lower = new_fact['fact'].lower()
+        new_content = new_fact['fact']
+        duplicate_found = False
         
-        if fact_lower in existing_content_map:
-            # Update existing fact
-            existing_fact = existing_content_map[fact_lower]
-            existing_fact['evidence_count'] += 1
-            existing_fact['last_reinforced_at'] = new_fact['created_at']
-            existing_fact['source_episodes'].extend(new_fact['source_episodes'])
-            # Remove duplicates from source_episodes
-            existing_fact['source_episodes'] = list(set(existing_fact['source_episodes']))
-        else:
+        # Check against existing facts for similarity
+        for existing_fact in merged_facts:
+            existing_content = existing_fact['fact']
+            
+            # Calculate similarity
+            similarity = text_similarity(new_content, existing_content)
+            
+            if similarity >= similarity_threshold:
+                # Found a duplicate - update existing fact
+                existing_fact['evidence_count'] += 1
+                existing_fact['last_reinforced_at'] = new_fact['created_at']
+                existing_fact['source_episodes'].extend(new_fact['source_episodes'])
+                # Remove duplicates from source_episodes
+                existing_fact['source_episodes'] = list(set(existing_fact['source_episodes']))
+                duplicate_found = True
+                break
+        
+        if not duplicate_found:
             # Add new fact
             merged_facts.append(new_fact)
     
@@ -169,7 +187,7 @@ def extract_facts_simple(episodes: List[Dict]) -> List[Dict[str, Any]]:
             'id': f"fact_{episode['id']}",
             'fact': content,
             'source_episodes': [episode['id']],
-            'confidence': 0.8,  # Medium confidence for rule-based extraction
+            'confidence': 0.8,  # Will be recalculated after deduplication
             'evidence_count': 1,
             'category': infer_category(episode),
             'created_at': episode['timestamp'],
@@ -199,6 +217,35 @@ def infer_category(episode: Dict) -> str:
     return category_map.get(event_type, 'general')
 
 
+def calculate_confidence(fact: Dict) -> float:
+    """
+    Calculate confidence score for a fact based on multiple factors.
+    
+    Factors:
+    - evidence_count: More evidence = higher confidence
+    - source_episodes: More diverse sources = higher confidence
+    - access_count: More access = higher confidence
+    - time_since_creation: Very old facts may have lower confidence
+    """
+    evidence_count = fact.get('evidence_count', 1)
+    source_count = len(fact.get('source_episodes', []))
+    access_count = fact.get('access_count', 0)
+    
+    # Base confidence from evidence
+    confidence = 0.5 + (min(evidence_count, 10) / 20)  # Max 1.0 at 10+ evidence
+    
+    # Boost from diverse sources
+    if source_count > 1:
+        confidence += min(source_count / 20, 0.2)  # Max +0.2 boost
+    
+    # Boost from access patterns
+    if access_count > 0:
+        confidence += min(access_count / 50, 0.1)  # Max +0.1 boost
+    
+    # Cap at 1.0
+    return min(confidence, 1.0)
+
+
 def extract_facts_llm(episodes: List[Dict]) -> List[Dict[str, Any]]:
     """
     LLM-based fact extraction (placeholder for Phase 2).
@@ -222,6 +269,8 @@ def main():
     parser.add_argument('--session-id', help='Extract from specific session ID')
     parser.add_argument('--method', choices=['simple', 'llm'], default='simple', 
                        help='Extraction method (default: simple)')
+    parser.add_argument('--similarity', type=float, default=0.7, 
+                       help='Similarity threshold for deduplication (default: 0.7)')
     
     args = parser.parse_args()
     
@@ -262,7 +311,11 @@ def main():
     existing_facts = load_semantic_memory()
     
     # Deduplicate and merge
-    merged_facts = deduplicate_facts(facts, existing_facts)
+    merged_facts = deduplicate_facts(facts, existing_facts, similarity_threshold=args.similarity)
+    
+    # Recalculate confidence for all facts
+    for fact in merged_facts:
+        fact['confidence'] = calculate_confidence(fact)
     
     # Save semantic memory
     save_semantic_memory(merged_facts)

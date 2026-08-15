@@ -54,17 +54,22 @@ def text_similarity(text1: str, text2: str) -> float:
     return SequenceMatcher(None, text1.lower(), text2.lower()).ratio()
 
 
-def find_recurring_patterns(episodes: List[Dict], similarity_threshold: float = 0.7) -> List[Dict[str, Any]]:
+def find_recurring_patterns(episodes: List[Dict], similarity_threshold: float = 0.7, max_episodes: int = 100) -> List[Dict[str, Any]]:
     """
-    Find recurring patterns in episodes.
+    Find recurring patterns in episodes (optimized).
     
     Args:
         episodes: List of episodes to analyze
         similarity_threshold: Minimum similarity to consider a recurrence (default 0.7)
+        max_episodes: Maximum episodes to analyze (default 100) to prevent long runtimes
     
     Returns:
         List of recurring patterns with metadata
     """
+    # Limit episodes to prevent O(n^2) performance issues
+    if len(episodes) > max_episodes:
+        episodes = episodes[:max_episodes]
+    
     patterns = []
     seen_patterns = {}
     
@@ -85,6 +90,10 @@ def find_recurring_patterns(episodes: List[Dict], similarity_threshold: float = 
             
             # Skip if other episode is too short
             if len(other_content) < 20:
+                continue
+            
+            # Quick length check to skip obviously different content
+            if abs(len(content) - len(other_content)) > len(content) * 0.5:
                 continue
             
             # Calculate similarity
@@ -156,7 +165,7 @@ def main():
     print(f"Analyzing {len(recent_episodes)} episodes for recurring patterns...", file=sys.stderr)
     
     # Find recurring patterns
-    patterns = find_recurring_patterns(recent_episodes, args.similarity)
+    patterns = find_recurring_patterns(recent_episodes, args.similarity, max_episodes=200)
     
     # Filter by minimum occurrences
     patterns = [p for p in patterns if p['occurrence_count'] >= args.min_occurrences]

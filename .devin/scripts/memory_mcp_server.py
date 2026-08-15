@@ -279,7 +279,161 @@ def memory_search_semantic(query: str, limit: int = 5, category: str = None) -> 
     matching_facts.sort(key=lambda x: (x['evidence_count'], x['last_reinforced_at']), reverse=True)
     matching_facts = matching_facts[:limit]
     
+    # Update access_count for matched facts
+    if matching_facts:
+        try:
+            # Create mapping for O(1) lookup and update
+            fact_map = {fact['id']: fact for fact in facts}
+            
+            # Update access_count for matched facts
+            updated = False
+            for matched_fact in matching_facts:
+                fact_id = matched_fact['id']
+                if fact_id in fact_map:
+                    if 'access_count' not in fact_map[fact_id]:
+                        fact_map[fact_id]['access_count'] = 0
+                    fact_map[fact_id]['access_count'] += 1
+                    updated = True
+            
+            # Write back if any updates
+            if updated:
+                with open(semantic_file, 'w') as f:
+                    json.dump(list(fact_map.values()), f, indent=2)
+        except (FileNotFoundError, json.JSONDecodeError, KeyError):
+            # If file operations fail, still return results
+            pass
+    
     return json.dumps(matching_facts, indent=2)
+
+
+@mcp.tool()
+def decision_check(pattern: str) -> str:
+    """
+    Check for applicable procedural decisions for a given pattern.
+    
+    Args:
+        pattern: The pattern to check against decision rules
+    
+    Returns:
+        JSON string with applicable decisions
+    """
+    memory_dir = get_memory_dir()
+    decisions_file = memory_dir / 'decisions.json'
+    
+    try:
+        with open(decisions_file, 'r') as f:
+            decisions = json.load(f)
+        
+        pattern_lower = pattern.lower()
+        applicable = []
+        
+        for decision in decisions:
+            if pattern_lower in decision['pattern'].lower():
+                applicable.append(decision)
+        
+        return json.dumps(applicable, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+def decision_apply(decision_id: str) -> str:
+    """
+    Apply a procedural decision and update its statistics.
+    
+    Args:
+        decision_id: The ID of the decision to apply
+    
+    Returns:
+        JSON string with updated decision
+    """
+    memory_dir = get_memory_dir()
+    decisions_file = memory_dir / 'decisions.json'
+    
+    try:
+        with open(decisions_file, 'r') as f:
+            decisions = json.load(f)
+        
+        for decision in decisions:
+            if decision['id'] == decision_id:
+                decision['last_applied'] = datetime.now(timezone.utc).isoformat()
+                decision['apply_count'] = decision.get('apply_count', 0) + 1
+                
+                with open(decisions_file, 'w') as f:
+                    json.dump(decisions, f, indent=2)
+                
+                return json.dumps(decision, indent=2)
+        
+        return json.dumps({"error": f"Decision {decision_id} not found"}, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+def decision_update_stats(decision_id: str, success: bool) -> str:
+    """
+    Update success statistics for a procedural decision.
+    
+    Args:
+        decision_id: The ID of the decision
+        success: Whether the application was successful
+    
+    Returns:
+        JSON string with confirmation
+    """
+    memory_dir = get_memory_dir()
+    decisions_file = memory_dir / 'decisions.json'
+    
+    try:
+        with open(decisions_file, 'r') as f:
+            decisions = json.load(f)
+        
+        for decision in decisions:
+            if decision['id'] == decision_id:
+                current_success_rate = decision.get('success_rate', 0.5)
+                new_success_rate = (current_success_rate * 0.9) + (1.0 if success else 0.0) * 0.1
+                decision['success_rate'] = new_success_rate
+                
+                with open(decisions_file, 'w') as f:
+                    json.dump(decisions, f, indent=2)
+                
+                return json.dumps({"status": "updated", "decision_id": decision_id, "success": success}, indent=2)
+        
+        return json.dumps({"error": f"Decision {decision_id} not found"}, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+def decision_get_confidence_threshold(claim_type: str = "default") -> str:
+    """
+    Get confidence threshold for a specific type of claim or decision.
+    
+    Args:
+        claim_type: Type of claim (default, information_verification, claim_quality, user_interaction)
+    
+    Returns:
+        JSON string with confidence threshold
+    """
+    memory_dir = get_memory_dir()
+    decisions_file = memory_dir / 'decisions.json'
+    
+    try:
+        with open(decisions_file, 'r') as f:
+            decisions = json.load(f)
+        
+        if claim_type == "information_verification":
+            return json.dumps({"threshold": 0.9, "type": "websearch_clarity"}, indent=2)
+        elif claim_type == "claim_quality":
+            return json.dumps({"threshold": 0.8, "type": "claim_quality"}, indent=2)
+        elif claim_type == "user_interaction":
+            return json.dumps({"use_ask_user_question": True, "type": "user_interaction"}, indent=2)
+        elif claim_type == "orchestration":
+            return json.dumps({"propose_implementation": True, "type": "orchestration"}, indent=2)
+        else:
+            return json.dumps({"threshold": 0.8, "type": "default"}, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
 
 
 @mcp.tool()
