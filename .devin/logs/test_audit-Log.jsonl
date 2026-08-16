@@ -1,0 +1,11 @@
+{"timestamp": "2026-08-16T04:46:14.516483Z", "level": "INFO", "module": "test_audit", "function": "<module>", "line": 162, "message": "Running audit tests..."}
+{"timestamp": "2026-08-16T04:46:14.516934Z", "level": "INFO", "module": "test_audit", "function": "test_compute_hash", "line": 67, "message": "Testing compute_hash()..."}
+{"timestamp": "2026-08-16T04:46:14.517121Z", "level": "INFO", "module": "test_audit", "function": "test_compute_hash", "line": 77, "message": "[PASS] compute_hash() test passed"}
+{"timestamp": "2026-08-16T04:46:14.517232Z", "level": "INFO", "module": "test_audit", "function": "test_append_audit", "line": 82, "message": "Testing append_audit()..."}
+{"timestamp": "2026-08-16T04:46:14.520748Z", "level": "INFO", "module": "test_audit", "function": "test_append_audit", "line": 105, "message": "[PASS] append_audit() test passed"}
+{"timestamp": "2026-08-16T04:46:14.521109Z", "level": "INFO", "module": "test_audit", "function": "test_verify_audit_chain", "line": 110, "message": "Testing verify_audit_chain()..."}
+{"timestamp": "2026-08-16T04:46:14.526373Z", "level": "INFO", "module": "test_audit", "function": "test_verify_audit_chain", "line": 125, "message": "[PASS] verify_audit_chain() test passed"}
+{"timestamp": "2026-08-16T04:46:14.526773Z", "level": "INFO", "module": "test_audit", "function": "test_tamper_detection", "line": 130, "message": "Testing tamper detection..."}
+{"timestamp": "2026-08-16T04:46:14.529995Z", "level": "INFO", "module": "test_audit", "function": "test_tamper_detection", "line": 157, "message": "[PASS] Tamper correctly detected: Line 2: Hash mismatch. Expected 087fbaa006b4dbd5273e4e4b4bebfe771f440708c1d70fabfacbb11c449a7d45, got 7086e0061f86a9c0579e596c5b0bd04fa5c0b6058a7cc592bff7ff706ec634d0"}
+{"timestamp": "2026-08-16T04:46:14.530365Z", "level": "INFO", "module": "test_audit", "function": "<module>", "line": 187, "message": "[SUCCESS] All audit tests passed!"}
+{"timestamp": "2026-08-16T04:46:14.530791Z", "level": "INFO", "module": "test_audit", "function": "<module>", "line": 218, "message": "Test documentation written to: C:\\Devin Harness\\.devin\\docs\\orchestrator\\tests\\2026-08-16_12-46-14-audit_tests.md"}

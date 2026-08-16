@@ -1,0 +1,80 @@
+{"timestamp": "2026-08-16T04:46:18.171960Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 69, "message": "Verifying FTS5 availability..."}
+{"timestamp": "2026-08-16T04:46:18.172600Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 74, "message": "FTS5 is available"}
+{"timestamp": "2026-08-16T04:46:18.173083Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 92, "message": "Initializing decisions database schema..."}
+{"timestamp": "2026-08-16T04:46:18.174093Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 177, "message": "Schema initialized successfully"}
+{"timestamp": "2026-08-16T04:46:18.175707Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 92, "message": "Initializing decisions database schema..."}
+{"timestamp": "2026-08-16T04:46:18.176501Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 177, "message": "Schema initialized successfully"}
+{"timestamp": "2026-08-16T04:46:18.176581Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:18.176708Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 1"}
+{"timestamp": "2026-08-16T04:46:18.176747Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:18.177430Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 2"}
+{"timestamp": "2026-08-16T04:46:18.177482Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:18.177576Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 3"}
+{"timestamp": "2026-08-16T04:46:18.177611Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:18.177697Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 4"}
+{"timestamp": "2026-08-16T04:46:18.177731Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:18.177806Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 5"}
+{"timestamp": "2026-08-16T04:46:18.177840Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 236, "message": "Searching decisions with query: test"}
+{"timestamp": "2026-08-16T04:46:18.178070Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 266, "message": "Found 5 decisions matching query"}
+{"timestamp": "2026-08-16T04:46:18.178132Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 236, "message": "Searching decisions with query: number"}
+{"timestamp": "2026-08-16T04:46:18.178272Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 266, "message": "Found 5 decisions matching query"}
+{"timestamp": "2026-08-16T04:46:18.178332Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 236, "message": "Searching decisions with query: decision 2"}
+{"timestamp": "2026-08-16T04:46:18.178454Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 266, "message": "Found 1 decisions matching query"}
+{"timestamp": "2026-08-16T04:46:18.178766Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 92, "message": "Initializing decisions database schema..."}
+{"timestamp": "2026-08-16T04:46:18.179403Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 177, "message": "Schema initialized successfully"}
+{"timestamp": "2026-08-16T04:46:18.179468Z", "level": "INFO", "module": "memory.decisions", "function": "insert_shared_fact", "line": 292, "message": "Inserting shared fact: project_convention"}
+{"timestamp": "2026-08-16T04:46:18.179560Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_shared_fact", "line": 305, "message": "Shared fact inserted with ID: 1"}
+{"timestamp": "2026-08-16T04:46:18.179596Z", "level": "INFO", "module": "memory.decisions", "function": "search_shared_facts", "line": 321, "message": "Searching shared facts with query: ESM"}
+{"timestamp": "2026-08-16T04:46:18.179704Z", "level": "INFO", "module": "memory.decisions", "function": "search_shared_facts", "line": 346, "message": "Found 1 shared facts matching query"}
+{"timestamp": "2026-08-16T04:46:32.584270Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 69, "message": "Verifying FTS5 availability..."}
+{"timestamp": "2026-08-16T04:46:32.584947Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 74, "message": "FTS5 is available"}
+{"timestamp": "2026-08-16T04:46:32.587126Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 92, "message": "Initializing decisions database schema..."}
+{"timestamp": "2026-08-16T04:46:32.641013Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 177, "message": "Schema initialized successfully"}
+{"timestamp": "2026-08-16T04:46:32.643370Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 92, "message": "Initializing decisions database schema..."}
+{"timestamp": "2026-08-16T04:46:32.644065Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 177, "message": "Schema initialized successfully"}
+{"timestamp": "2026-08-16T04:46:32.644138Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:32.644264Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 1"}
+{"timestamp": "2026-08-16T04:46:32.644303Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:32.644442Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 2"}
+{"timestamp": "2026-08-16T04:46:32.644485Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:32.644588Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 3"}
+{"timestamp": "2026-08-16T04:46:32.644625Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:32.644718Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 4"}
+{"timestamp": "2026-08-16T04:46:32.644767Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:32.644887Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 5"}
+{"timestamp": "2026-08-16T04:46:32.644996Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 236, "message": "Searching decisions with query: test"}
+{"timestamp": "2026-08-16T04:46:32.645334Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 266, "message": "Found 5 decisions matching query"}
+{"timestamp": "2026-08-16T04:46:32.645409Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 236, "message": "Searching decisions with query: number"}
+{"timestamp": "2026-08-16T04:46:32.645551Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 266, "message": "Found 5 decisions matching query"}
+{"timestamp": "2026-08-16T04:46:32.645612Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 236, "message": "Searching decisions with query: decision 2"}
+{"timestamp": "2026-08-16T04:46:32.645736Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 266, "message": "Found 1 decisions matching query"}
+{"timestamp": "2026-08-16T04:46:32.646032Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 92, "message": "Initializing decisions database schema..."}
+{"timestamp": "2026-08-16T04:46:32.646675Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 177, "message": "Schema initialized successfully"}
+{"timestamp": "2026-08-16T04:46:32.646739Z", "level": "INFO", "module": "memory.decisions", "function": "insert_shared_fact", "line": 292, "message": "Inserting shared fact: project_convention"}
+{"timestamp": "2026-08-16T04:46:32.646830Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_shared_fact", "line": 305, "message": "Shared fact inserted with ID: 1"}
+{"timestamp": "2026-08-16T04:46:32.646867Z", "level": "INFO", "module": "memory.decisions", "function": "search_shared_facts", "line": 321, "message": "Searching shared facts with query: ESM"}
+{"timestamp": "2026-08-16T04:46:32.646969Z", "level": "INFO", "module": "memory.decisions", "function": "search_shared_facts", "line": 346, "message": "Found 1 shared facts matching query"}
+{"timestamp": "2026-08-16T04:46:36.461100Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 69, "message": "Verifying FTS5 availability..."}
+{"timestamp": "2026-08-16T04:46:36.474638Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 74, "message": "FTS5 is available"}
+{"timestamp": "2026-08-16T04:46:36.474750Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 92, "message": "Initializing decisions database schema..."}
+{"timestamp": "2026-08-16T04:46:36.524570Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 177, "message": "Schema initialized successfully"}
+{"timestamp": "2026-08-16T04:46:36.527611Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 69, "message": "Verifying FTS5 availability..."}
+{"timestamp": "2026-08-16T04:46:36.539670Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 74, "message": "FTS5 is available"}
+{"timestamp": "2026-08-16T04:46:36.539774Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 92, "message": "Initializing decisions database schema..."}
+{"timestamp": "2026-08-16T04:46:36.576985Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 177, "message": "Schema initialized successfully"}
+{"timestamp": "2026-08-16T04:46:36.577285Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: test_decision for stage test-stage"}
+{"timestamp": "2026-08-16T04:46:36.578537Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 1"}
+{"timestamp": "2026-08-16T04:46:36.580498Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 69, "message": "Verifying FTS5 availability..."}
+{"timestamp": "2026-08-16T04:46:36.591503Z", "level": "INFO", "module": "memory.decisions", "function": "verify_fts5", "line": 74, "message": "FTS5 is available"}
+{"timestamp": "2026-08-16T04:46:36.591616Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 92, "message": "Initializing decisions database schema..."}
+{"timestamp": "2026-08-16T04:46:36.631241Z", "level": "INFO", "module": "memory.decisions", "function": "initialize_schema", "line": 177, "message": "Schema initialized successfully"}
+{"timestamp": "2026-08-16T04:46:36.632886Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: stage_output for stage stage1"}
+{"timestamp": "2026-08-16T04:46:36.633972Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 1"}
+{"timestamp": "2026-08-16T04:46:36.634021Z", "level": "INFO", "module": "memory.decisions", "function": "insert_decision", "line": 206, "message": "Inserting decision: tool_choice for stage stage2"}
+{"timestamp": "2026-08-16T04:46:36.634189Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_decision", "line": 220, "message": "Decision inserted with ID: 2"}
+{"timestamp": "2026-08-16T04:46:36.634230Z", "level": "INFO", "module": "memory.decisions", "function": "insert_shared_fact", "line": 292, "message": "Inserting shared fact: convention"}
+{"timestamp": "2026-08-16T04:46:36.634363Z", "level": "DEBUG", "module": "memory.decisions", "function": "insert_shared_fact", "line": 305, "message": "Shared fact inserted with ID: 1"}
+{"timestamp": "2026-08-16T04:46:36.634403Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 236, "message": "Searching decisions with query: completed"}
+{"timestamp": "2026-08-16T04:46:36.634614Z", "level": "INFO", "module": "memory.decisions", "function": "search_decisions", "line": 266, "message": "Found 1 decisions matching query"}
+{"timestamp": "2026-08-16T04:46:36.634678Z", "level": "INFO", "module": "memory.decisions", "function": "search_shared_facts", "line": 321, "message": "Searching shared facts with query: snake_case"}
+{"timestamp": "2026-08-16T04:46:36.634800Z", "level": "INFO", "module": "memory.decisions", "function": "search_shared_facts", "line": 346, "message": "Found 1 shared facts matching query"}

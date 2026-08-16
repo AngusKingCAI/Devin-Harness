@@ -1,0 +1,10 @@
+{"timestamp": "2026-08-16T04:46:36.457922Z", "level": "INFO", "module": "test_memory", "function": "<module>", "line": 192, "message": "Running memory system tests..."}
+{"timestamp": "2026-08-16T04:46:36.458247Z", "level": "INFO", "module": "test_memory", "function": "test_memory_system_initialization", "line": 67, "message": "Testing MemorySystem initialization..."}
+{"timestamp": "2026-08-16T04:46:36.525212Z", "level": "INFO", "module": "test_memory", "function": "test_memory_system_initialization", "line": 81, "message": "[PASS] MemorySystem initialization test passed"}
+{"timestamp": "2026-08-16T04:46:36.526226Z", "level": "INFO", "module": "test_memory", "function": "test_memory_system_context_manager", "line": 93, "message": "Testing MemorySystem context manager..."}
+{"timestamp": "2026-08-16T04:46:36.579146Z", "level": "INFO", "module": "test_memory", "function": "test_memory_system_context_manager", "line": 118, "message": "[PASS] MemorySystem context manager test passed"}
+{"timestamp": "2026-08-16T04:46:36.579606Z", "level": "INFO", "module": "test_memory", "function": "test_memory_system_integration", "line": 128, "message": "Testing full memory system integration..."}
+{"timestamp": "2026-08-16T04:46:36.635578Z", "level": "INFO", "module": "test_memory", "function": "test_memory_system_integration", "line": 183, "message": "[PASS] Full memory system integration test passed"}
+{"timestamp": "2026-08-16T04:46:36.636106Z", "level": "INFO", "module": "test_memory", "function": "<module>", "line": 221, "message": "Test Results: 3/3 passed"}
+{"timestamp": "2026-08-16T04:46:36.636172Z", "level": "INFO", "module": "test_memory", "function": "<module>", "line": 224, "message": "[SUCCESS] All memory system tests passed!"}
+{"timestamp": "2026-08-16T04:46:36.636587Z", "level": "INFO", "module": "test_memory", "function": "<module>", "line": 258, "message": "Test documentation written to: C:\\Devin Harness\\.devin\\docs\\orchestrator\\tests\\2026-08-16_12-46-36-memory_tests.md"}

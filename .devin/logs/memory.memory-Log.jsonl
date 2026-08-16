@@ -1,0 +1,15 @@
+{"timestamp": "2026-08-16T04:46:36.460323Z", "level": "INFO", "module": "memory.memory", "function": "__init__", "line": 79, "message": "Initializing memory system with DB: C:\\Users\\King\\AppData\\Local\\Temp\\tmp5rhmmg30\\decisions.sqlite, Audit: C:\\Users\\King\\AppData\\Local\\Temp\\tmp5rhmmg30\\action-log.jsonl"}
+{"timestamp": "2026-08-16T04:46:36.460491Z", "level": "INFO", "module": "memory.memory", "function": "initialize", "line": 83, "message": "Initializing memory system..."}
+{"timestamp": "2026-08-16T04:46:36.524766Z", "level": "INFO", "module": "memory.memory", "function": "initialize", "line": 101, "message": "Database journal mode: wal"}
+{"timestamp": "2026-08-16T04:46:36.525054Z", "level": "INFO", "module": "memory.memory", "function": "initialize", "line": 106, "message": "Memory system initialized successfully"}
+{"timestamp": "2026-08-16T04:46:36.525504Z", "level": "INFO", "module": "memory.memory", "function": "close", "line": 113, "message": "Memory system closed"}
+{"timestamp": "2026-08-16T04:46:36.527044Z", "level": "INFO", "module": "memory.memory", "function": "__init__", "line": 79, "message": "Initializing memory system with DB: C:\\Users\\King\\AppData\\Local\\Temp\\tmpdxc_4yl1\\decisions.sqlite, Audit: C:\\Users\\King\\AppData\\Local\\Temp\\tmpdxc_4yl1\\action-log.jsonl"}
+{"timestamp": "2026-08-16T04:46:36.527127Z", "level": "INFO", "module": "memory.memory", "function": "initialize", "line": 83, "message": "Initializing memory system..."}
+{"timestamp": "2026-08-16T04:46:36.577143Z", "level": "INFO", "module": "memory.memory", "function": "initialize", "line": 101, "message": "Database journal mode: wal"}
+{"timestamp": "2026-08-16T04:46:36.577226Z", "level": "INFO", "module": "memory.memory", "function": "initialize", "line": 106, "message": "Memory system initialized successfully"}
+{"timestamp": "2026-08-16T04:46:36.579057Z", "level": "INFO", "module": "memory.memory", "function": "close", "line": 113, "message": "Memory system closed"}
+{"timestamp": "2026-08-16T04:46:36.579962Z", "level": "INFO", "module": "memory.memory", "function": "__init__", "line": 79, "message": "Initializing memory system with DB: C:\\Users\\King\\AppData\\Local\\Temp\\tmpt9iuvsgj\\decisions.sqlite, Audit: C:\\Users\\King\\AppData\\Local\\Temp\\tmpt9iuvsgj\\action-log.jsonl"}
+{"timestamp": "2026-08-16T04:46:36.580036Z", "level": "INFO", "module": "memory.memory", "function": "initialize", "line": 83, "message": "Initializing memory system..."}
+{"timestamp": "2026-08-16T04:46:36.631398Z", "level": "INFO", "module": "memory.memory", "function": "initialize", "line": 101, "message": "Database journal mode: wal"}
+{"timestamp": "2026-08-16T04:46:36.631488Z", "level": "INFO", "module": "memory.memory", "function": "initialize", "line": 106, "message": "Memory system initialized successfully"}
+{"timestamp": "2026-08-16T04:46:36.635512Z", "level": "INFO", "module": "memory.memory", "function": "close", "line": 113, "message": "Memory system closed"}
