@@ -1,50 +1,90 @@
 {
-  "PreToolUse": [
+  "SessionStart": [
     {
-      "type": "command",
-      "command": "python .devin/scripts/hooks/pre_tool_use.py"
-    }
-  ],
-  "PostToolUse": [
-    {
-      "type": "command",
-      "command": "python .devin/scripts/hooks/post_tool_use.py"
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python .devin/scripts/hooks/session_start.py"
+        }
+      ]
     }
   ],
   "UserPromptSubmit": [
     {
-      "type": "command",
-      "command": "python .devin/scripts/hooks/user_prompt_submit.py"
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python .devin/scripts/hooks/user_prompt_submit.py"
+        }
+      ]
     }
   ],
-  "SessionStart": [
+  "PreToolUse": [
     {
-      "type": "command",
-      "command": "python .devin/scripts/hooks/session_start.py"
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python .devin/scripts/hooks/pre_tool_use.py"
+        }
+      ]
     }
   ],
-  "SessionEnd": [
+  "PostToolUse": [
     {
-      "type": "command",
-      "command": "python .devin/scripts/hooks/session_end.py"
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python .devin/scripts/hooks/post_tool_use.py"
+        }
+      ]
     }
   ],
   "PermissionRequest": [
     {
-      "type": "command",
-      "command": "python .devin/scripts/hooks/permission_request.py"
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python .devin/scripts/hooks/permission_request.py"
+        }
+      ]
     }
   ],
   "Stop": [
     {
-      "type": "command",
-      "command": "python .devin/scripts/hooks/stop.py"
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python .devin/scripts/hooks/stop.py"
+        }
+      ]
+    }
+  ],
+  "SessionEnd": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python .devin/scripts/hooks/session_end.py"
+        }
+      ]
     }
   ],
   "PostCompaction": [
     {
-      "type": "command",
-      "command": "python .devin/scripts/hooks/post_compaction.py"
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python .devin/scripts/hooks/post_compaction.py"
+        }
+      ]
     }
   ]
 }

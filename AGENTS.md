@@ -92,6 +92,7 @@ For detailed implementation guidance, refer to:
 - This is NOT the case for linked `.py` hook script files - Python files are reloaded on each hook execution
 - When implementing or modifying hooks.v1.json, always restart any running Devin CLI processes
 - This is critical for Phase 4 hook script implementation and testing
+- **hooks.v1.json format requires nested structure**: Each event is an array containing objects with "matcher" and "hooks" keys, not direct hook objects
 
 ## Error Handling
 
