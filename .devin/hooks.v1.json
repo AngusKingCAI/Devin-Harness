@@ -1,50 +1,10 @@
 {
-  "SessionStart": [
-    {
-      "matcher": "",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "python .devin/scripts/load_episodes.py --limit 10 --hours 24"
-        }
-      ]
-    }
-  ],
-  "UserPromptSubmit": [
-    {
-      "matcher": "",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "python .devin/scripts/log_episode.py --event-type decision --agent \"Orchestrator\" --from-stdin --importance high"
-        }
-      ]
-    }
-  ],
-  "PostToolUse": [
-    {
-      "matcher": "",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "python .devin/scripts/log_episode.py --event-type attempt --from-stdin --importance medium"
-        }
-      ]
-    }
-  ],
-  "SessionEnd": [
-    {
-      "matcher": "",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "python .devin/scripts/log_episode.py --event-type note --content 'Session ended' --agent \"Orchestrator\" --from-stdin --importance low"
-        },
-        {
-          "type": "command",
-          "command": "python .devin/scripts/semantic_extract.py --hours 24 --method simple"
-        }
-      ]
-    }
-  ]
+  "PreToolUse": [],
+  "PostToolUse": [],
+  "UserPromptSubmit": [],
+  "SessionStart": [],
+  "SessionEnd": [],
+  "PermissionRequest": [],
+  "Stop": [],
+  "PostCompaction": []
 }

@@ -1,0 +1,6 @@
+{
+  "destructive_command_denylist": [],
+  "rewrite_rules": [],
+  "always_allow_tools": [],
+  "always_deny_tools": []
+}
