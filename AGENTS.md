@@ -122,3 +122,45 @@ If you encounter uncertainty:
 - Summarize what has been completed
 - Confirm the user is satisfied before proceeding
 - Be prepared to revisit previous steps if requested
+
+## Current Implementation Status
+
+### Phase 1: Registry System ✅
+- Implemented `RegistryEntry` and `Registry` Pydantic models
+- Implemented agent profile loading from AGENT.md files
+- Implemented frontmatter parsing
+- Completed, committed, and pushed
+
+### Phase 2: Generic State Machine ✅
+- Implemented `PipelineConfig` loader
+- Implemented `WorkflowState` and `StateMachine` Pydantic models
+- Implemented `atomic_write_state` for safe state persistence
+- Implemented `OrchestratorLock` for preventing concurrent execution
+- Created `pipeline.json` configuration
+- Created `tasks/dummy-task.md` test task
+- Completed, committed, and pushed
+
+### Phase 3: Memory System ✅
+- Implemented `append_audit` for audit log
+- Implemented `verify_audit_chain` for chain integrity
+- Implemented `decisions.sqlite` schema with FTS5 search
+- Implemented decision insertion and search methods
+- Implemented shared facts insertion and search methods
+- Completed, committed, and pushed
+
+### Phase 4: Hook Scripts ✅
+- Implemented 8 hook scripts:
+  - `session_start.py` - Injects recovery brief on session start
+  - `user_prompt_submit.py` - Injects recovery brief on user prompt
+  - `pre_tool_use.py` - Blocks destructive commands per policy
+  - `post_tool_use.py` - Extracts decisions and shared facts
+  - `permission_request.py` - Approves/denies permissions per policy
+  - `stop.py` - Marks stage as stopped
+  - `post_compaction.py` - Updates heartbeat
+  - `session_end.py` - Marks stage as completed or stopped
+- Created `hooks.v1.json` configuration
+- Implemented `subprocess_runner.py` for running stages
+- Implemented `main.py` orchestrator entry point
+- Hooks use environment variables with relative path fallbacks (best practice)
+- 13 unit tests for hooks, all passing
+- Completed, committed, and pushed
