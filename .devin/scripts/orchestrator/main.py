@@ -3,9 +3,58 @@
 import os
 import sys
 import json
+import logging
 from pathlib import Path
 from typing import Optional
 from datetime import datetime, timezone
+
+# Setup logging for this module
+def setup_logging(module_name: str):
+    """Setup JSONL logging for a module."""
+    log_dir = Path(__file__).parent.parent.parent / "logs"
+    log_dir.mkdir(parents=True, exist_ok=True)
+    
+    log_file = log_dir / f"{module_name}-Log.jsonl"
+    
+    class JsonFormatter(logging.Formatter):
+        def format(self, record):
+            log_entry = {
+                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                "level": record.levelname,
+                "module": record.name,
+                "function": record.funcName,
+                "line": record.lineno,
+                "message": record.getMessage(),
+            }
+            
+            if record.exc_info:
+                log_entry["exception"] = self.formatException(record.exc_info)
+            
+            if hasattr(record, 'extra_fields'):
+                log_entry.update(record.extra_fields)
+            
+            return json.dumps(log_entry)
+    
+    file_handler = logging.FileHandler(log_file, mode='a', encoding='utf-8')
+    file_handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(JsonFormatter())
+    
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    console_formatter = logging.Formatter(
+        '%(asctime)s [%(levelname)s] %(name)s:%(funcName)s:%(lineno)d - %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S'
+    )
+    console_handler.setFormatter(console_formatter)
+    
+    logger = logging.getLogger(module_name)
+    logger.setLevel(logging.DEBUG)
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+    
+    return logger
+
+logger = setup_logging("orchestrator.main")
 
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
