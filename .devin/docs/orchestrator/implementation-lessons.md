@@ -178,3 +178,57 @@ These lessons should be applied to future phases:
 - Removed Unicode characters from test output (checkmarks caused encoding errors)
 - Use ASCII-safe characters: `[PASS]`, `[FAIL]`, `[SUCCESS]`
 - File encoding specified as `utf-8` for cross-platform compatibility
+
+## Phase 4 Implementation (Hook Scripts)
+
+### Hook Script Configuration
+- **hooks.v1.json format requires nested structure**: Each event is an array containing objects with "matcher" and "hooks" keys, not direct hook objects
+- Correct format: `{"EventName": [{"matcher": "", "hooks": [{"type": "command", "command": "python script.py"}]}]}`
+- **CRITICAL: hooks.v1.json requires Devin CLI restart** for changes to take effect
+- Python hook script files are reloaded on each execution (no restart needed for script changes)
+
+### Environment Variable Configuration
+- Used environment variables with relative path fallbacks (best practice from web search)
+- Configuration precedence: CLI flags > OS environment variables > .env file > config file > hard-coded defaults
+- Environment variables have highest priority for production configurations
+- Relative path defaults for local development convenience
+- Used variables: ORCHESTRATOR_PROJECT_ROOT, ORCHESTRATOR_STATE_PATH, ORCHESTRATOR_AUDIT_LOG_PATH, ORCHESTRATOR_DECISIONS_DB_PATH, ORCHESTRATOR_STAGE_ID
+
+### Hook Script Implementation
+- 8 hook scripts implemented: session_start, user_prompt_submit, pre_tool_use, post_tool_use, permission_request, stop, post_compaction, session_end
+- Hooks need workflow state file to function properly (created manual testing state)
+- Recovery brief injection works via `hookSpecificOutput.additionalContext`
+- Decision extraction uses heuristics (decision keywords in tool output)
+- Shared fact extraction uses key-value pattern detection
+- Destructive command blocking via policy.json denylist
+- Permission management via always_allow/always_deny tool lists
+
+### Logging Integration
+- Added JSONL logging to all 8 hook scripts per logging-setup.md requirements
+- Added logging to subprocess_runner.py and main.py orchestrator modules
+- Used proper module naming (hooks.session_start, hooks.pre_tool_use, etc.) for log files
+- Added debug, info, warning, and error logging throughout hook scripts
+- Log files created in `.devin/logs/` with format `{module_name}-Log.jsonl`
+
+### Testing Results
+- 13 unit tests for hooks, all passing
+- Real-world testing showed hooks are live and functional
+- PreToolUse successfully blocked `rm -rf` command when policy.json had denylist
+- PostToolUse updating heartbeats and extracting decisions
+- Audit log being written with proper hash chaining
+- Logging working with proper module names in .devin/logs/
+
+### Lessons Learned
+- Hook scripts need workflow state to function (stage_states, current_stage_id, etc.)
+- Manual testing state file needed for hooks outside orchestrator context
+- Policy.json field naming matters (destructive_commands vs destructive_command_denylist)
+- Hook execution order: PreToolUse → PermissionRequest → tool execution → PostToolUse
+- Session hooks (SessionStart, SessionEnd) trigger on session lifecycle events
+- UserPromptSubmit triggers on user prompts in the session
+- PostCompaction triggers after conversation compaction
+
+## Future Implementation Notes
+
+These lessons should be applied to future phases:
+- Phase 5: Orchestrator main loop and subprocess runner
+- Phase 6+: Advanced features

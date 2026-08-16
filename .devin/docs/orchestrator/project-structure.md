@@ -52,16 +52,41 @@ The Orchestrator uses domain-based grouping for better organization:
 │   ├── pipeline.pipeline-Log.jsonl
 │   ├── state.state-Log.jsonl
 │   ├── state.lock-Log.jsonl
+│   ├── memory.audit-Log.jsonl
+│   ├── memory.decisions-Log.jsonl
+│   ├── memory.memory-Log.jsonl
+│   ├── hooks.session_start-Log.jsonl
+│   ├── hooks.user_prompt_submit-Log.jsonl
+│   ├── hooks.pre_tool_use-Log.jsonl
+│   ├── hooks.post_tool_use-Log.jsonl
+│   ├── hooks.permission_request-Log.jsonl
+│   ├── hooks.stop-Log.jsonl
+│   ├── hooks.post_compaction-Log.jsonl
+│   ├── hooks.session_end-Log.jsonl
+│   ├── orchestrator.subprocess_runner-Log.jsonl
+│   ├── orchestrator.main-Log.jsonl
 │   ├── test_registry-Log.jsonl
 │   ├── test_pipeline-Log.jsonl
-│   └── test_state-Log.jsonl
+│   ├── test_state-Log.jsonl
+│   ├── test_memory-Log.jsonl
+│   ├── test_audit-Log.jsonl
+│   ├── test_decisions-Log.jsonl
+│   └── test_hooks-Log.jsonl
 ├── tests/               # Test files by domain
 │   ├── pipeline/
 │   │   └── test_pipeline.py
 │   ├── registry/
 │   │   └── test_registry.py
-│   └── state/
-│       └── test_state.py
+│   ├── state/
+│   │   └── test_state.py
+│   ├── memory/
+│   │   ├── test_audit.py
+│   │   ├── test_decisions.py
+│   │   └── test_memory.py
+│   ├── hooks/
+│   │   └── test_hooks.py
+│   └── integration/
+│       └── test_real_world.py
 └── hooks.v1.json        # Must be in .devin/ root (Phase 4)
 ```
 
@@ -107,9 +132,17 @@ The Orchestrator uses domain-based grouping for better organization:
 - `config/orchestrator/` - Orchestrator-specific configs
 
 **Hooks Domain** - Hook scripts (Phase 4)
-- `scripts/hooks/` - 8 hook scripts
+- `scripts/hooks/session_start.py` - SessionStart hook script
+- `scripts/hooks/user_prompt_submit.py` - UserPromptSubmit hook script
+- `scripts/hooks/pre_tool_use.py` - PreToolUse hook script
+- `scripts/hooks/post_tool_use.py` - PostToolUse hook script
+- `scripts/hooks/permission_request.py` - PermissionRequest hook script
+- `scripts/hooks/stop.py` - Stop hook script
+- `scripts/hooks/post_compaction.py` - PostCompaction hook script
+- `scripts/hooks/session_end.py` - SessionEnd hook script
 - `config/hooks/` - Hook configurations
 - `.devin/hooks.v1.json` - Main hook configuration (must be in .devin/ root)
+- `tests/hooks/test_hooks.py` - Hook script tests
 
 **Tasks Domain** - Task prompt files (Phase 2)
 - `tasks/` - Task prompt files for pipeline stages

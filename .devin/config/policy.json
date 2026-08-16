@@ -1,6 +1,19 @@
 {
-  "destructive_command_denylist": [],
-  "rewrite_rules": [],
-  "always_allow_tools": [],
+  "destructive_commands": [
+    "rm -rf",
+    "rmdir /s",
+    "del /f",
+    "git push --force",
+    "git push -f",
+    "git reset --hard",
+    "git clean -fd"
+  ],
+  "always_allow_tools": [
+    "read",
+    "grep",
+    "find_file_by_name",
+    "web_search",
+    "webfetch"
+  ],
   "always_deny_tools": []
 }

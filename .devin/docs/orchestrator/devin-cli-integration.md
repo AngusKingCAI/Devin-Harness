@@ -42,6 +42,9 @@ Use websearch for Devin CLI-specific issues:
 - Must be located directly in `.devin/` directory
 - Configures hook scripts for each event type
 - Uses matcher patterns for tool-specific hooks
+- **CRITICAL: hooks.v1.json requires Devin CLI restart** for changes to take effect
+- Python hook script files are reloaded on each execution (no restart needed for script changes)
+- **Format requires nested structure**: Each event is an array containing objects with "matcher" and "hooks" keys
 - Example structure:
 ```json
 {
@@ -61,6 +64,13 @@ Use websearch for Devin CLI-specific issues:
 - Can be in `.devin/` or user config directory
 - Contains permission mode, model settings, etc.
 - Orchestrator may need specific config for hook integration
+
+### policy.json
+- Orchestrator policy configuration file
+- Located in `.devin/config/policy.json`
+- Contains destructive command denylist, always_allow_tools, always_deny_tools
+- Field naming matters: `destructive_commands` vs `destructive_command_denylist`
+- Used by PreToolUse and PermissionRequest hooks for policy enforcement
 
 ## Common Integration Patterns
 
