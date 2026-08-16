@@ -85,6 +85,14 @@ For detailed implementation guidance, refer to:
 - WAL mode only works with file-based SQLite databases, not :memory:
 - Module organization: split focused modules over monolithic files (follow web search best practices)
 
+## Devin CLI Configuration Behavior
+
+**CRITICAL: hooks.v1.json requires Devin CLI restart**
+- When `.devin/hooks.v1.json` is edited, Devin CLI must be restarted for changes to take effect
+- This is NOT the case for linked `.py` hook script files - Python files are reloaded on each hook execution
+- When implementing or modifying hooks.v1.json, always restart any running Devin CLI processes
+- This is critical for Phase 4 hook script implementation and testing
+
 ## Error Handling
 
 If you encounter uncertainty:
