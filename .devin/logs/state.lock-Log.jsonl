@@ -1,0 +1,5 @@
+{"timestamp": "2026-08-16T04:26:43.104986Z", "level": "INFO", "module": "state.lock", "function": "__init__", "line": 72, "message": "Initialized OrchestratorLock with path: C:\\Users\\King\\AppData\\Local\\Temp\\tmp5wqv6kq9\\orchestrator.lock"}
+{"timestamp": "2026-08-16T04:26:43.105105Z", "level": "INFO", "module": "state.lock", "function": "acquire", "line": 84, "message": "Attempting to acquire lock: C:\\Users\\King\\AppData\\Local\\Temp\\tmp5wqv6kq9\\orchestrator.lock"}
+{"timestamp": "2026-08-16T04:26:43.105422Z", "level": "INFO", "module": "state.lock", "function": "_acquire_windows", "line": 139, "message": "Lock acquired (Windows)"}
+{"timestamp": "2026-08-16T04:26:43.105821Z", "level": "INFO", "module": "state.lock", "function": "release", "line": 176, "message": "Releasing lock: C:\\Users\\King\\AppData\\Local\\Temp\\tmp5wqv6kq9\\orchestrator.lock"}
+{"timestamp": "2026-08-16T04:26:43.106058Z", "level": "INFO", "module": "state.lock", "function": "release", "line": 195, "message": "Lock released successfully"}

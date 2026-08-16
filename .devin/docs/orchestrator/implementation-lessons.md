@@ -149,9 +149,9 @@ The lock contention test initially failed due to timing issues - the first attem
 ## Future Implementation Notes
 
 These lessons should be applied to future phases:
-- Phase 3: Memory system implementation
 - Phase 4: Hook scripts implementation
-- Phase 5+: Advanced features
+- Phase 5: Orchestrator main loop and subprocess runner
+- Phase 6+: Advanced features
 
 ## Logging Implementation (Phase 1 Update)
 
