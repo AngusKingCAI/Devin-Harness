@@ -37,6 +37,9 @@ Use the `ask_user_question` tool for all decision points. Present 2-4 clear opti
 - Run tests before proceeding to the next component
 - Fix any test failures before moving forward
 - Ensure all tests pass before considering a component complete
+- **CRITICAL**: Distinguish between simulated tests and real-world scenarios
+- **CRITICAL**: Simulated crash/lock tests are NOT equivalent to real process kills or concurrent access
+- **CRITICAL**: Be honest about testing limitations in documentation
 
 ### File Location Requirements
 
@@ -77,6 +80,10 @@ For detailed implementation guidance, refer to:
 - Always explain what you're about to do and why
 - Handle Windows-specific issues (Unicode encoding, path separators)
 - Avoid Pydantic field name conflicts with parent classes (e.g., "schema" field)
+- Use TYPE_CHECKING to avoid circular imports in domain-based structure
+- Skip directory fsync on Windows due to permission issues (non-critical)
+- WAL mode only works with file-based SQLite databases, not :memory:
+- Module organization: split focused modules over monolithic files (follow web search best practices)
 
 ## Error Handling
 

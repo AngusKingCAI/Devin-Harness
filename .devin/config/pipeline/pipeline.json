@@ -1,7 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "name": "default-pipeline",
+  "name": "test-pipeline",
   "version": "1.0.0",
-  "stages": [],
-  "terminal_states": {}
+  "stages": [
+    {"id": "dummy-stage", "subagent": "dummy", "input": {"task_prompt_file": "tasks/dummy-task.md"}, "on_success": "complete", "on_failure": "fail"}
+  ],
+  "terminal_states": {"complete": {"status": "succeeded"}, "fail": {"status": "failed"}, "escalate": {"status": "escalated", "notify": "human"}}
 }

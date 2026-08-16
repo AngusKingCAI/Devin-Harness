@@ -1,0 +1,1 @@
+Run your task as described in your system prompt. Write your output to `<scratch_dir>` (passed via the ORCHESTRATOR_SCRATCH_DIR env var).

@@ -14,17 +14,26 @@ The Orchestrator uses domain-based grouping for better organization:
 ```
 .devin/
 ├── scripts/
-│   ├── hooks/           # Hook scripts
-│   ├── memory/          # Memory operations (memory.py)
-│   ├── orchestrator/    # Core orchestration (main.py, subprocess_runner.py, lock.py)
-│   ├── pipeline/        # Pipeline configuration (pipeline.py)
-│   ├── registry/        # Registry management (registry.py)
-│   └── state/           # State management (state.py)
+│   ├── hooks/           # Hook scripts (Phase 4)
+│   ├── memory/          # Memory operations (Phase 3)
+│   │   ├── audit.py
+│   │   ├── decisions.py
+│   │   ├── memory.py
+│   │   └── __init__.py
+│   ├── orchestrator/    # Core orchestration (Phase 5)
+│   ├── pipeline/        # Pipeline configuration (Phase 2)
+│   │   └── pipeline.py
+│   ├── registry/        # Registry management (Phase 1)
+│   │   └── registry.py
+│   └── state/           # State management (Phase 2)
+│       ├── state.py
+│       └── lock.py
 ├── config/
 │   ├── hooks/           # Hook configurations
 │   ├── memory/          # Memory-related configs
 │   ├── orchestrator/    # Orchestrator-specific configs
-│   ├── pipeline/        # pipeline.json
+│   ├── pipeline/        # pipeline.json (Phase 2)
+│   │   └── pipeline.json
 │   ├── registry/        # Registry-related configs
 │   ├── state/           # State-related configs
 │   └── policy.json      # General policy configuration
@@ -33,8 +42,27 @@ The Orchestrator uses domain-based grouping for better organization:
 │   └── escalations/     # Escalation files
 ├── memory/
 │   └── archive/         # Completed run archives
-├── agents/              # Sub-agent profiles
-└── hooks.v1.json        # Must be in .devin/ root
+├── agents/              # Sub-agent profiles (Phase 1)
+│   └── dummy/
+│       └── AGENT.md
+├── tasks/               # Task prompt files (Phase 2)
+│   └── dummy-task.md
+├── logs/                # JSONL log files (Phase 1+)
+│   ├── registry.registry-Log.jsonl
+│   ├── pipeline.pipeline-Log.jsonl
+│   ├── state.state-Log.jsonl
+│   ├── state.lock-Log.jsonl
+│   ├── test_registry-Log.jsonl
+│   ├── test_pipeline-Log.jsonl
+│   └── test_state-Log.jsonl
+├── tests/               # Test files by domain
+│   ├── pipeline/
+│   │   └── test_pipeline.py
+│   ├── registry/
+│   │   └── test_registry.py
+│   └── state/
+│       └── test_state.py
+└── hooks.v1.json        # Must be in .devin/ root (Phase 4)
 ```
 
 ## File Placement Decisions
@@ -48,32 +76,46 @@ The Orchestrator uses domain-based grouping for better organization:
 
 ## Domain Responsibilities
 
-**Registry Domain** - Managing sub-agent profiles
+**Registry Domain** - Managing sub-agent profiles (Phase 1)
 - `scripts/registry/registry.py` - Registry implementation
 - `config/registry/` - Registry-specific configurations
+- `tests/registry/test_registry.py` - Registry tests
 
-**Pipeline Domain** - Pipeline configuration and execution
-- `scripts/pipeline/pipeline.py` - Pipeline loader
+**Pipeline Domain** - Pipeline configuration and execution (Phase 2)
+- `scripts/pipeline/pipeline.py` - Pipeline loader with JSON schema validation
 - `config/pipeline/pipeline.json` - Pipeline definition
+- `tests/pipeline/test_pipeline.py` - Pipeline tests
 
-**State Domain** - State management
-- `scripts/state/state.py` - State machine implementation
+**State Domain** - State management (Phase 2)
+- `scripts/state/state.py` - State machine and workflow state models
+- `scripts/state/lock.py` - Orchestrator lock for process synchronization
 - `config/state/` - State-related configurations
 - `state/runs/` - Runtime scratch directories
 - `state/escalations/` - Escalation files
+- `tests/state/test_state.py` - State machine and lock tests
 
-**Memory Domain** - Memory operations
-- `scripts/memory/memory.py` - Memory implementation
+**Memory Domain** - Memory operations (Phase 3)
+- `scripts/memory/audit.py` - Audit log with SHA-256 hash chain
+- `scripts/memory/decisions.py` - SQLite FTS5 decision database
+- `scripts/memory/memory.py` - Memory system facade
 - `config/memory/` - Memory-related configurations
 - `memory/archive/` - Completed run archives
 
-**Orchestrator Core Domain** - Main coordination
+**Orchestrator Core Domain** - Main coordination (Phase 5)
 - `scripts/orchestrator/main.py` - Entry point
 - `scripts/orchestrator/subprocess_runner.py` - Subprocess management
-- `scripts/orchestrator/lock.py` - Process locking
 - `config/orchestrator/` - Orchestrator-specific configs
 
-**Hooks Domain** - Hook scripts
+**Hooks Domain** - Hook scripts (Phase 4)
 - `scripts/hooks/` - 8 hook scripts
 - `config/hooks/` - Hook configurations
 - `.devin/hooks.v1.json` - Main hook configuration (must be in .devin/ root)
+
+**Tasks Domain** - Task prompt files (Phase 2)
+- `tasks/` - Task prompt files for pipeline stages
+- `tasks/dummy-task.md` - Example task for dummy stage
+
+**Logs Domain** - JSONL logging (Phase 1+)
+- `logs/` - JSONL log files for all modules
+- Module-specific log files: `{module_name}-Log.jsonl`
+- Test-specific log files: `test_{module_name}-Log.jsonl`
